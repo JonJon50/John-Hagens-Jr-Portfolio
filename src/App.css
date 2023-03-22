@@ -1,0 +1,101 @@
+body {
+  height: 95vh;
+}
+
+.nav {
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-decoration: none;
+border-bottom: none;
+
+}
+
+.sidenav {
+  float: right;
+  width: 12vw;
+  height: 90vh;
+  margin-bottom: 150px;
+  
+}
+
+li {
+  margin: 15px 15px 15px 60px;
+}
+
+.aboutstyle {
+margin: 30px 100px 100px 100px;
+width: 60vw;
+}
+
+.headerstyle {
+  height: 10vh;
+}
+
+
+.img-hover {
+  border: 2px solid rgb(68, 63, 63); /* default border color */
+  transition: border-color 0.3s ease-in-out; /* transition effect */
+}
+
+.img-hover:hover {
+  border-color: rgb(21, 222, 35); /* new border color when hovering */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  position: fixed;
+}
+
+.enlarge-image {
+  transition: all 0.2s ease-in-out;
+}
+
+.enlarge-image:hover {
+  transform: scale(1.1);
+}
+/* .footerstiky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+} */
+
+/* .projectholder {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.card1 {
+  box-sizing: border-box;
+  margin: 28px 0px;
+  width: 100%;
+  display: flex;
+  
+}
+.insidecard1 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.divider {
+  margin: 0px 32px;
+  height: 60%;
+  width: 2px;
+  background: black;
+  border-radius: 20px;
+}
+
+.projectname {
+  position: relative;
+  font-family: var(--title);
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 600;
+} */
