@@ -15,7 +15,7 @@ function Project() {
 </Col>
 
     <Col xs={11} lg={6} className="my-5 " >
-    <div className="d-flex align-items-start">
+    <div className="d-flex align-items-start ">
   <Stack gap={3} >
       <div className="transparent ">Our website is a platform for job seekers looking for opportunities. We provide a space for companies to post job openings and for applicants to browse through and apply for positions that match their skills and interests..
 
