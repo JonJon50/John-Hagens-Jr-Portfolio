@@ -17,7 +17,7 @@ function About() {
     <div className="d-flex align-items-start">
   <Stack gap={3} >
       <div className="transparent ">My name is John and I'm a motivated tech professional and problem solver with a background in big data. Experience with analytical thinking, project manage, strong team skills, and excellent verbal and written communication.</div>
-      <div className="transparent">Trained at [University of Central Florida (UCF)] coding boot camp and earned a certificate in full-stack web development. </div>
+      <div className="transparent">Trained at [University of Central Florida (UCF)] coding boot camp and earned a certificate in Full-Stack Web Development. </div>
       <div className="transparent">Innovative problem-solver passionate about developing apps; focused development. Strengths in creativity, teamwork, and building projects from ideation to execution.</div>
     </Stack>
     </div>

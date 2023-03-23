@@ -1,19 +1,37 @@
-
 function Footer() {
-    return (
-      <div style={{marginTop:"30%"}} className="footerstiky">
-        <h1>Footer Page</h1>
-        <p>
-          Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-          Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-          mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-          lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-          imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-          in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-        </p>
-      </div>
-    );
-  }
+  return (
+    <div style={{ marginTop: "30%" }} className="footerstiky">
+      <footer>
+        <div class="footer-content">
+          <h2>Get in Touch</h2>
+          <p>
+            If you have any questions or comments, please feel free to contact
+            me.
+          </p>
+          <ul class="social-icons">
+            <li>
+              <a href="https://github.com/YOUR_USERNAME">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/YOUR_USERNAME">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:ginuwine104@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 John Hagens. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
 
-  
-  export default Footer
+export default Footer;

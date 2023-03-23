@@ -15,8 +15,8 @@ function App() {
     <div className="App">
        <BrowserRouter >
        {/* <Parallax
-        blur={{ min: -15, max: 15 }}
-        bgImage="https://external-preview.redd.it/SPxj-nuKwhl798gR0La6Wy9AwyRRCEM0f8YSCMQoxLE.jpg?auto=webp&s=4f2719e21b0064d96be0216531c2dcc8571c8924"
+        blur={{ min: 0, max: 2 }}
+        bgImage="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png"
         bgImageAlt="the dog"
         strength={500}
     >
