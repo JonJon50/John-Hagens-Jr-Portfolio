@@ -3,7 +3,7 @@ import { MDBInput, MDBCheckbox, MDBBtn, MDBTextArea } from 'mdb-react-ui-kit';
 
 function Contact() {
   return (
-    <div style={{ display: 'flex', flexDirection:"column", justifyContent: 'center', marginRight:"35%", marginLeft:"35%" }}>
+    <div style={{ display: 'flex', flexDirection:"column", justifyContent: 'center', marginRight:"35%", marginLeft:"43%" }}>
       <form id='form' className='text-center' style={{ width: '100%', maxWidth: '300px', marginTop: '100px' }}>
         <h2>Contact us</h2>
 

@@ -5,7 +5,7 @@ function Portfolio() {
   return (
     <div className="aboutstyle">
       <div style={{ marginLeft: "45%"}} className="d-flex justify-content-center">
-      <h1>Portfolio Page</h1>
+      <h1>Projects</h1>
       </div>
       <Container style={{ marginLeft: "25%", marginTop:"10%"}} className="text-center">
         <Project />
