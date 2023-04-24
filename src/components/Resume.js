@@ -1,5 +1,5 @@
 import page1 from "../Image/Resume1.png";
-import page2 from "../Image/Resume2.png";
+// import page2 from "../Image/Resume2.png";
 
 function Resume() {
   return (
@@ -20,7 +20,8 @@ function Resume() {
           // marginLeft: ""
         }}
       />
-      <h2 style={{ 
+{/* This was for second page of Resume if needed */}
+      {/* <h2 style={{ 
         textAlign: "center",
         marginTop: "40px" }}>
         Download the Second Page of my Resume <a href={page2} download>Here</a>
@@ -33,8 +34,8 @@ function Resume() {
           height: "125vh",
           boxShadow: "0 0 1000px rgba(0, 0, 0, 0.5)",
           borderRadius: "80px",
-        }}
-      />
+        }} */}
+      {/* /> */}
     </div>
   );
 }
