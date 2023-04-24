@@ -4,8 +4,8 @@ import page2 from "../Image/Certificate.png";
 function Resume() {
   return (
     <div className="resume-container">
-      <h1 style={{ textAlign: "center", marginLeft: "40px" }}>Resume</h1>
-      <h2 style={{ textAlign: "center", marginLeft: "40px" }}>
+      <h1 style={{ textAlign: "center", marginLeft: "250px" }}>Resume</h1>
+      <h2 style={{ textAlign: "center", marginLeft: "250px" }}>
         Download <a href={page1} download>Here</a>
       </h2>
       <img alt="resumePage1"
@@ -13,7 +13,7 @@ function Resume() {
         style={{
           display: "block",
           margin: "0 auto",
-          marginLeft: "490px",
+          marginLeft: "650px",
           maxWidth: "100%",
           height: "auto",
           boxShadow: "0 0 1000px rgba(0, 0, 0, 0.5)",
@@ -23,14 +23,15 @@ function Resume() {
       />
       <h2 style={{ 
         textAlign: "center",
-        marginTop: "40px" }}>
+        marginTop: "40px", 
+        marginLeft: "250px" }}>
         Certificate of <a href={page2} download>Completion</a>
       </h2>
       <img alt="resumePage2"
         src={page2}
         style={{
           display: "block",
-          margin: "0 auto",
+          margin: "0 auto 0 30%",
           height: "50vh",
           width: "auto",
           boxShadow: "0 0 1000px rgba(0, 0, 0, 0.5)",

@@ -53,8 +53,8 @@ Go to the internet, type in John Hagens Portfolio, That's it!
 
 🔭 [Deployment Website](https://evening-temple-10597.herokuapp.com/) 🔭
 
-![Photo1](./assets/images/Nannys%20care2.png)
-![Photo1](./assets/images/Nanny's%20Care1.png)
+![Photo1](./src/Image/Portfolio1.png)
+![Photo1](./src/Image/Portfolio2.png)
 
 
 
