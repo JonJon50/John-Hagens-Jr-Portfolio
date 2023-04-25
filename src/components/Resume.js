@@ -13,7 +13,7 @@ function Resume() {
         style={{
           display: "block",
           margin: "0 auto",
-          marginLeft: "650px",
+          marginLeft: "420px",
           maxWidth: "100%",
           height: "auto",
           boxShadow: "0 0 1000px rgba(0, 0, 0, 0.5)",
@@ -24,14 +24,14 @@ function Resume() {
       <h2 style={{ 
         textAlign: "center",
         marginTop: "40px", 
-        marginLeft: "250px" }}>
+        marginLeft: "10px" }}>
         Certificate of <a href={page2} download>Completion</a>
       </h2>
       <img alt="resumePage2"
         src={page2}
         style={{
           display: "block",
-          margin: "0 auto 0 30%",
+          margin: "0 auto 0 33%",
           height: "50vh",
           width: "auto",
           boxShadow: "0 0 1000px rgba(0, 0, 0, 0.5)",
