@@ -13,6 +13,8 @@ function About() {
   </a>
 </Col>
 
+
+
     <Col xs={11} lg={7} className="my-5 mb-3 shadow-md my-4 img-fluid rounded shadow-lg border-round p-2 img-hover" >
     <div className="d-flex align-items-start">
   <Stack gap={3}>
@@ -25,10 +27,10 @@ function About() {
     <div className="transparent" style={{color: "white"}}>
       Innovative problem-solver passionate about developing apps; focused development. Strengths in creativity, teamwork, and building projects from ideation to execution.
     </div>
-  </Stack>
-</div>
+    </Stack>
+    </div>
+</Col>
 
-    </Col>
    </Row>
 
 
