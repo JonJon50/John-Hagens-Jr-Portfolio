@@ -81,7 +81,8 @@ Go to the internet, type in John Hagens Portfolio, That's it!
 
 - [x] Reliable API // This is done 
 - [x] Authentication // This is done
-- [x] Heroku Storage // This is done 
+- [x] Heroku Deployment // This is done 
+- [x] Vercel Deployment // This is done
 
 <br>
 <h2 id="credits">Collaborators/Creditors 🏆</h2>
