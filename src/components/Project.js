@@ -30,7 +30,7 @@ function Project() {
 
        <Row className="d-flex flex-row justify-content-between align-item-start">
     <Col className="d-flex flex-column text-center" xs={11} lg={6} >
-  <a href="https://john-hagens-jr-portfolio.vercel.app/" style={{ textDecoration: 'none' }}>
+  <a href="https://ici-homes-38cfb5e13b6d.herokuapp.com/" style={{ textDecoration: 'none' }}>
   <div style={{ color: 'white', fontFamily: 'Arial', fontSize: '25px' }}>ICI Homes</div>
     <Image src={iciHomes} className="shadow-md my-4 img-fluid rounded shadow-lg border-round p-1 img-hover enlarge-image" />
   </a>
