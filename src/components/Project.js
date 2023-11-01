@@ -8,7 +8,7 @@ function Project() {
       <Container>
     <Row className="d-flex flex-row justify-content-between align-item-start">
     <Col className="d-flex flex-column text-center" xs={11} lg={6} >
-  <a href="https://workhive1.herokuapp.com" style={{ textDecoration: 'none' }}>
+  <a href="https://the-social-hive-2f9b38244e14.herokuapp.com/" style={{ textDecoration: 'none' }}>
   <div style={{ color: 'white', fontFamily: 'Arial', fontSize: '25px' }}>WorkHive</div>
     <Image src={HomeImage} className="shadow-md my-4 img-fluid rounded shadow-lg border-round p-1 w250 img-hover enlarge-image " />
   </a>
