@@ -1,7 +1,7 @@
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 import { Route } from "react-router-dom";
 import HomeImage from "../Image/Home:page.png";
-import NannyDiary from "../Image/Nanny's Care1.png";
+import iciHomes from "../Image/Videopage.png";
 import FitResolution from "../Image/main1.png";
 function Project() {
     return (
@@ -30,18 +30,18 @@ function Project() {
 
        <Row className="d-flex flex-row justify-content-between align-item-start">
     <Col className="d-flex flex-column text-center" xs={11} lg={6} >
-  <a href="https://lit-depths-94534.herokuapp.com/" style={{ textDecoration: 'none' }}>
-  <div style={{ color: 'white', fontFamily: 'Arial', fontSize: '25px' }}>Nanny's Diary</div>
-    <Image src={NannyDiary} className="shadow-md my-4 img-fluid rounded shadow-lg border-round p-1 img-hover enlarge-image" />
+  <a href="https://john-hagens-jr-portfolio.vercel.app/" style={{ textDecoration: 'none' }}>
+  <div style={{ color: 'white', fontFamily: 'Arial', fontSize: '25px' }}>ICI Homes</div>
+    <Image src={iciHomes} className="shadow-md my-4 img-fluid rounded shadow-lg border-round p-1 img-hover enlarge-image" />
   </a>
 </Col>
 
     <Col xs={11} lg={6} className="my-5 " >
     <div className="d-flex align-items-start">
   <Stack gap={3} >
-      <div className="transparent ">Nanny's Diary in home daycare are dedicated to providing families with quality home childcare in a safe and nurturing environment.</div>
-      <div className="transparent">Entrusting your family childcare to a Nanny's home daycare gives children the added security of being cared for in a home environment while still giving parents the peace of mind that comes from knowing their children are under the supervision of licensed professionals.</div>
-      <div className="transparent">Since home daycare information can change often, we have created the perfect website to stay up to date by nanny and parent interaction, letting us know if any of the information on the childcare information is up or out of date. We want to know and give you the right information every time.</div>
+      <div className="transparent ">Frontend and backend website that helps consumer find homes and custom build them.</div>
+      <div className="transparent">PHP, Laravel, Livewire, Alpine.js, server-side APIs, and Javascript, Github and Heroku. </div>
+      <div className="transparent">Designing and building web applications using Laravel.</div>
     </Stack>
     </div>
     </Col>
