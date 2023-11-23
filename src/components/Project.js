@@ -1,8 +1,8 @@
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 import { Route } from "react-router-dom";
-import HomeImage from "../Image/Home:page.png";
-import iciHomes from "../Image/IciHomes.png";
-import FitResolution from "../Image/FitResolution.png";
+import HomeImage from "../assets/Image/Home:page.png";
+import iciHomes from "../assets/Image/IciHomes.png";
+import FitResolution from "../assets/Image/FitResolution.png";
 function Project() {
     return (
       <Container>

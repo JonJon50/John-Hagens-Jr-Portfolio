@@ -1,6 +1,6 @@
 import React from "react";
-import page1 from "../Image/Resume1.png";
-import page2 from "../Image/Certificate.png";
+import page1 from "../assets/Image/Resume1.png";
+import page2 from "../assets/Image/Certificate.png";
 
 const containerStyle = {
   display: "flex",
