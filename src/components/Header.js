@@ -20,7 +20,6 @@ function Header() {
         </h1>
         <p>Coding for the Future!</p>
       </div>
-      {/* <Nav></Nav> */}
     </div>
   );
 }

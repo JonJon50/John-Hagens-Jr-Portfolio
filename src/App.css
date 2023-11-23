@@ -121,3 +121,37 @@ footer {
 .footer-bottom p span {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    flex-direction: row; /* Example: Change nav layout on mobile */
+    justify-content: space-around;
+  }
+
+  .sidenav {
+    width: 100%; /* Full width on smaller screens */
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .aboutstyle {
+    margin: 15px; /* Adjust margin for mobile */
+    width: 90%; /* Adjust width for mobile */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content h2,
+  .footer-content p {
+    text-align: center;
+  }
+
+  .social-icons li {
+    margin-right: 10px;
+  }
+
+  /* Add any other responsive adjustments here */
+}

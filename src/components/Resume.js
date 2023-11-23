@@ -1,6 +1,6 @@
 import React from "react";
-import page1 from "../Image/Resume1.png";
-import page2 from "../Image/Certificate.png";
+import page1 from "../assets/Image/Resume1.png";
+import page2 from "../assets/Image/Certificate.png";
 
 const containerStyle = {
   display: "flex",
@@ -34,11 +34,17 @@ function Resume() {
     <div style={containerStyle} className="resume-container">
       <h1 style={headingStyle}>Resume</h1>
       <h2 style={linkStyle}>
-        Download <a href={page1} download>Here</a>
+        Download{" "}
+        <a href={page1} download>
+          Here
+        </a>
       </h2>
       <img alt="resumePage1" src={page1} style={imageStyle} />
       <h2 style={linkStyle}>
-        Certificate of <a href={page2} download>Completion</a>
+        Certificate of{" "}
+        <a href={page2} download>
+          Completion
+        </a>
       </h2>
       <img alt="resumePage2" src={page2} style={imageStyle} />
     </div>
@@ -46,4 +52,3 @@ function Resume() {
 }
 
 export default Resume;
-
