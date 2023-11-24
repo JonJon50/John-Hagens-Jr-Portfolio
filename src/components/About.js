@@ -4,8 +4,8 @@ import MyPhoto from "../assets/Image/me.png";
 
 function About() {
   return (
-    <Row className="d-flex flex-row justify-content-between align-item-start mt-5">
-      <Col className="d-flex flex-column text-center " xs={11} lg={4}>
+    <Row className="d-flex justify-content-center align-items-center min-vh-100">
+      <Col className="d-flex flex-column text-center " xs={12} lg={4}>
         <a
           href="https://github.com/JonJon50"
           style={{ textDecoration: "none" }}
@@ -22,8 +22,8 @@ function About() {
         </a>
       </Col>
       <Col
-        xs={11}
-        lg={7}
+        xs={12}
+        lg={8}
         className="my-5 mb-3 shadow-md my-4 img-fluid rounded shadow-lg border-round p-2 img-hover"
       >
         <div className="d-flex align-items-start">
