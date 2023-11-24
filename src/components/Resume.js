@@ -8,7 +8,9 @@ const containerStyle = {
   alignItems: "center", // Center horizontally
   justifyContent: "center", // Center vertically
   minHeight: "100vh", // Set a minimum height to occupy the entire viewport height
-  marginLeft: "12%", // Add left margin to move content to the right
+  marginLeft: "10%", // Add left margin to move content to the right
+  marginRight: "10%", // Add right margin to move content to the left
+  padding: "50px",
 };
 
 const headingStyle = {
@@ -26,7 +28,7 @@ const imageStyle = {
   maxWidth: "100%",
   height: "auto",
   boxShadow: "0 0 1000px rgba(0, 0, 0, 0.5)",
-  borderRadius: "80px",
+  borderRadius: "50px",
 };
 
 function Resume() {

@@ -2,6 +2,10 @@ body {
   height: 95vh;
 }
 
+.headerstyle {
+  height: 10vh;
+}
+
 .nav {
   list-style-type: none;
   display: flex;
@@ -9,7 +13,6 @@ body {
   justify-content: center;
   text-decoration: none;
   border-bottom: none;
-
 }
 
 .sidenav {
@@ -23,16 +26,16 @@ body {
 li {
   margin: 15px 15px 15px 60px;
 }
+/* about page  */
+
+.min-vh-100 {
+  min-height: 100vh;
+}
 
 .aboutstyle {
   margin: 30px 100px 100px 100px;
   width: 60vw;
 }
-
-.headerstyle {
-  height: 10vh;
-}
-
 
 .img-hover {
   border: 2px solid rgb(68, 63, 63);
@@ -63,7 +66,7 @@ footer {
   background-color: #1a1a1a;
   color: #fff;
   font-family: Arial, sans-serif;
-  padding: 50px 0;
+  padding: 50px 6;
 }
 
 .footer-content {
@@ -81,7 +84,7 @@ footer {
 
 .footer-content p {
   font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
 }
 
 .social-icons {
@@ -135,8 +138,8 @@ footer {
   }
 
   .aboutstyle {
-    margin: 15px; /* Adjust margin for mobile */
-    width: 90%; /* Adjust width for mobile */
+    margin: -80px; /* Adjust margin for mobile */
+    width: 100%; /* Adjust width for mobile */
   }
 
   .footer-content {
