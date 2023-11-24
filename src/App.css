@@ -158,3 +158,61 @@ footer {
 
   /* Add any other responsive adjustments here */
 }
+
+
+
+.hamburger {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.line {
+  width: 2rem;
+  height: 0.25rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show the hamburger icon on small screens */
+  }
+
+  .sidenav {
+    position: absolute; /* Take out of normal flow */
+    right: 0;
+    height: 30vh;
+    top: 0;
+    background-color: #333; /* Whatever background color you want */
+    opacity: 0.5; 
+    width: 38%; /* How wide you want the sidebar */
+    transform: translateX(100%); /* Hide off screen to the right */
+    transition: transform 0.8s ease-in-out;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  .sidenav.expanded {
+    transform: translateX(0); /* Show sidebar */
+  }
+
+  .nav-item {
+    display: block; /* Stack items vertically */
+    text-align: center;
+  }
+
+  .nav-item a {
+    display: block; /* Make links fill their container */
+  }
+}
