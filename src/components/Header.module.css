@@ -1,0 +1,25 @@
+/* Header.module.css */
+.headerStyle {
+    background-color: #000000; /* Darker color for the header to mimic menu bar */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Align items to the start of the header */
+    margin-bottom: 0; /* Remove any bottom margin */
+  }
+  
+  .branding {
+    text-shadow: 2px 2px 3px #61dafb;
+    font-family: "Apple Chancery", sans-serif;
+    margin-left: auto; /* Pushes the branding to the right */
+  }
+  
+  .profilePhoto {
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px; /* Spacing between the image and the branding text */
+    border: 5px solid #61dafb; /* Optional: adds a border like syntax highlighting */
+  }
+  

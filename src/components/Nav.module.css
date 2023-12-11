@@ -1,108 +1,143 @@
 /* Nav.module.css */
 .navHeader {
-    background-color: #21252b; /* Darker color for the header to mimic menu bar */
-    color: white;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .navList {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .navItem {
-    margin: 0 1rem;
-  }
-  
-  .navLink {
-    color: #61dafb; /* Color similar to syntax highlighting */
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-    font-family: 'Fira Code', monospace; /* Monospaced font for the links */
-     /* Remove inline styles for shadow and apply them here */
-     textShadow: '2px 2px 4px #000000';
-     color: 'white';
-     fontSize: '20px';
-  }
-  
-  .navLink:hover {
-    color: #98c379; /* Color change on hover for interactivity */
-  }
-  
-    .headerstyle {
-        background-color: #21252b; /* Darker color for the header to mimic menu bar */
-        color: white;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* Adjust layout for header elements */
-        font-family: 'Fira Code', monospace; /* Monospaced font for the header */
-      }
-      
-      .nav {
-        background-color: #21252b; /* Consistent background with the header */
-        border-bottom: 1px solid #61dafb; /* Add a border like an IDE */
-        list-style-type: none;
-        display: flex;
-        justify-content: flex-end; /* Adjust navigation for top-right placement */
-      }
-      
-      .nav li {
-        margin: 0 1rem; /* Space out navigation items */
-      }
-      
-      .nav a {
-        color: #61dafb; /* Color similar to syntax highlighting */
-        text-decoration: none;
-        transition: color 0.2s ease-in-out;
-      }
-      
-      .nav a:hover {
-        color: #98c379; /* Color change on hover for interactivity */
-      }
-      
-  
-  /* Style the hamburger menu to fit the coding theme */
-  .hamburger {
-    background: #21252b; /* Same as header background */
-    border: 0;
-    outline: 0;
-  }
-  
-  .hamburger .line {
-    background-color: #61dafb; /* Highlight color */
-  }
-  
-  /* Style for when the navigation is expanded */
-  .expanded {
-    background-color: #181a1f; /* Slightly lighter than the header for contrast */
-    width: 100%; /* Full width for mobile view */
-    display: block;
-  }
-  
-  /* Additional backdrop style when nav is expanded */
-  .expanded + .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dim the background */
-    z-index: 5; /* Behind the nav but above other content */
-  }
-  
-  .backdrop {
-    /* Styles for the backdrop */
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10; /* Ensure it's above the content but below the expanded nav */
-  }
-  
+  background-color: #000102;
+  /* Darker color for the header to mimic menu bar */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navItem {
+  margin: 0 1rem;
+}
+
+.navLink {
+  color: #61dafb;
+  /* Color similar to syntax highlighting */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-family: 'Fira Code', monospace;
+  /* Monospaced font for the links */
+  /* Remove inline styles for shadow and apply them here */
+  color: 'white';
+  fontSize: '20px';
+}
+
+.navLink:hover {
+  color: #98c379;
+  /* Color change on hover for interactivity */
+}
+
+.headerstyle {
+  background-color: #21252b;
+  /* Darker color for the header to mimic menu bar */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Adjust layout for header elements */
+  font-family: 'Fira Code', monospace;
+  /* Monospaced font for the header */
+}
+
+.nav {
+  background-color: #000000;
+  /* Consistent background with the header */
+  border-bottom: 3px solid #61dafb;
+  /* Add a border like an IDE */
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  /* Adjust navigation for top-right placement */
+  margin: 0;
+  height: auto;
+  /* Or a specific height, if necessary */
+}
+
+.nav li {
+  margin: 0 2rem;
+  /* Space out navigation items */
+}
+
+.nav a {
+  color: #61dafb;
+  /* Color similar to syntax highlighting */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  /* Color change on hover for interactivity */
+}
+
+
+/* Style the hamburger menu to fit the coding theme */
+.hamburger {
+  background: #000000;
+  /* Same as header background */
+  border: 0;
+  outline: 0;
+}
+
+.hamburger .line {
+  background-color: #61dafb;
+  /* Highlight color */
+}
+
+/* Style for when the navigation is expanded */
+.expanded {
+  background-color: #181a1f;
+  /* Slightly lighter than the header for contrast */
+  width: 100%;
+  /* Full width for mobile view */
+  display: block;
+}
+
+/* Additional backdrop style when nav is expanded */
+.expanded+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dim the background */
+  z-index: 5;
+  /* Behind the nav but above other content */
+}
+
+.backdrop {
+  /* Styles for the backdrop */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  /* Ensure it's above the content but below the expanded nav */
+}
+
+.sidenav {
+  /* Styles for your side navigation, if you're using it */
+  background-color: #000000;
+  color: white;
+  width: 120rem;
+}
+
+.navContainer {
+  /* Styles for the container of the nav */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

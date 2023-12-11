@@ -1,6 +1,6 @@
 /* About.module.css */
 .aboutContainer {
-    background-color: #282c34;
+     display: flex;  
     color: #abb2bf;
     font-family: 'Fira Code', monospace;
   }

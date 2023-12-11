@@ -1,3 +1,4 @@
+// component/Nav.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from './Nav.module.css'; // Corrected import for CSS module
@@ -9,7 +10,7 @@ function Nav() {
   const backdrop = isNavExpanded ? <div className={styles.backdrop} onClick={() => setIsNavExpanded(false)}></div> : null;
 
   return (
-    <div>
+    <div className={styles.navContainer}>
       {backdrop}
       <button
         className={styles.hamburger} // Apply the hamburger style from your module
