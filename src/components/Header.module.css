@@ -1,25 +1,101 @@
 /* Header.module.css */
 .headerStyle {
-    background-color: #000000; /* Darker color for the header to mimic menu bar */
-    color: white;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: start; /* Align items to the start of the header */
-    margin-bottom: 0; /* Remove any bottom margin */
+  background-color: #000000;
+  /* Darker color for the header to mimic menu bar */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* Align items to the start of the header */
+  margin-bottom: 0;
+  /* Remove any bottom margin */
+  position: relative;
+  /* Establish a positioning context */
+}
+
+.branding {
+  text-shadow: 2px 2px 3px #61dafb;
+  font-family: "Apple Chancery", sans-serif;
+  margin-left: auto;
+  /* Pushes the branding to the right */
+  position: absolute;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Offset the div to truly center it over the image */
+  text-align: center;
+}
+
+.profilePhoto {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  /* Makes the image circular */
+  margin-right: 20px;
+  /* Spacing between the image and the branding text */
+  border: 5px solid #61dafb;
+  /* Optional: adds a border like syntax highlighting */
+}
+
+@media (max-width: 768px) {
+  .headerStyle {
+    justify-content: center; /* Center the items horizontally */
+    /* Adjust padding to make space for the text, if needed */
+    position: relative; /* Needed for absolute positioning of the children */
   }
-  
+
   .branding {
-    text-shadow: 2px 2px 3px #61dafb;
-    font-family: "Apple Chancery", sans-serif;
-    margin-left: auto; /* Pushes the branding to the right */
+    width: 100%; /* Full width of the header */
+    /* Adjust font-size and other properties to fit the design */
   }
-  
+
+  /* Additional styles for text to ensure it fits and looks good over the image */
+  .branding h3, .branding p {
+    color: white;
+    display: inline; /* Each on their own line */
+    padding: 0.5em; /* Padding around the text */
+    border-radius: 50%; /* Rounded corners for the background */
+    margin: 0; /* Remove default margin */
+    font-size: xx-large; /* Adjust font size as necessary */
+    
+  }
+
+  .branding p {
+    /* This targets only the paragraph which is "Web Developer" */
+    position: absolute; /* Position it over the h1 */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Offset it to truly center it horizontally */
+    width: max-content; /* Adjust the width to the content */
+    margin-top: 2rem; /* Adjust this value to move "Web Developer" right below "John Hagens Portfolio" */
+
+  }
+
+  .branding {
+    /* Position the branding container to overlap the image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Full width to allow centering of children */
+    text-align: center; /* Center the text within the branding div */
+    z-index: 2; /* Higher than the image to overlay on top of it */
+    top: calc(50% + 35px); /* Adjust the vertical position as needed */
+  }
+
+  .branding h1 {
+    /* Style for the name */
+    margin: 0;
+    font-size: smaller; /* Adjust font size as necessary */
+  }
+
   .profilePhoto {
-    width: 350px; 
-    height: 350px; 
-    border-radius: 50%; /* Makes the image circular */
-    margin-right: 20px; /* Spacing between the image and the branding text */
-    border: 5px solid #61dafb; /* Optional: adds a border like syntax highlighting */
+    display: block; /* Ensure the image is a block-level element */
+    margin: 0 auto; /* Auto margins on left and right to center the image */
+    position: relative; /* To stack the branding on top */
   }
+
   
+}

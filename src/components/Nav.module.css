@@ -64,7 +64,7 @@
 }
 
 .nav li {
-  margin: 0 2rem;
+  margin: 0 1rem;
   /* Space out navigation items */
 }
 
@@ -132,7 +132,7 @@
   /* Styles for your side navigation, if you're using it */
   background-color: #000000;
   color: white;
-  width: 120rem;
+  width: 160rem;
 }
 
 .navContainer {
@@ -140,4 +140,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Media query for mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    width: 100%; /* Ensure the nav takes full width */
+    justify-content: space-around; /* This will space your nav items evenly */
+  }
+
+  .navItem {
+    margin: 0; /* Reset the margin for nav items */
+  }
+
+  /* ... other styles ... */
 }

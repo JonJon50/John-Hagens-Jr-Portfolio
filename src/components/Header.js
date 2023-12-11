@@ -13,7 +13,7 @@ function Header() {
         className={styles.profilePhoto}
       />
       <div className={styles.branding}>
-        <h1>John Hagens Portfolio</h1>
+        <h3>John Hagens Portfolio</h3>
         <p>Web Developer</p>
       </div>
       {/* Navigation goes here */}
