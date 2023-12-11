@@ -1,11 +1,11 @@
 /* index.css */
 body {
   margin: 0;
-  font-family: 'Fira Code', 'Roboto Mono', monospace; /* Monospaced font for coding feel */
+  font-family: 'monospaced', 'Roboto Mono', monospace; /* Monospaced font for coding feel */
   background-color: #282c34; /* Darker background for code editor look */
   color: #abb2bf; /* Lighter text color for readability */
 }
 
 code {
-  font-family: 'Fira Code', 'Roboto Mono', monospace;
+  font-family: 'monospaced', 'Roboto Mono', monospace;
 }

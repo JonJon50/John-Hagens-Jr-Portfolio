@@ -12,7 +12,7 @@ function Header() {
       >
         <h1
           style={{
-            textShadow: "2px 2px 3px #FFFFFF",
+            textShadow: "2px 2px 3px #61dafb",
             fontFamily: "Apple Chancery, sans-serif",
           }}
         >
