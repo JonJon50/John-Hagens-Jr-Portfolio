@@ -6,7 +6,7 @@
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   /* Align items to the start of the header */
   margin-bottom: 0;
   /* Remove any bottom margin */
@@ -38,6 +38,12 @@
   /* Spacing between the image and the branding text */
   border: 5px solid #61dafb;
   /* Optional: adds a border like syntax highlighting */
+}
+
+/* Styles applied for all screen sizes */
+.branding h3, .branding p {
+  /* Set a larger font size for fullscreen */
+  font-size: 3rem; /* Or any size that you prefer */
 }
 
 @media (max-width: 768px) {
@@ -85,10 +91,10 @@
     top: calc(50% + 35px); /* Adjust the vertical position as needed */
   }
 
-  .branding h1 {
+  .branding h3 {
     /* Style for the name */
     margin: 0;
-    font-size: smaller; /* Adjust font size as necessary */
+
   }
 
   .profilePhoto {
@@ -97,5 +103,8 @@
     position: relative; /* To stack the branding on top */
   }
 
-  
+  .branding h3, .branding p {
+    /* Override font size for mobile */
+    font-size: 2rem; /* Adjust to the size appropriate for mobile */
+  }
 }

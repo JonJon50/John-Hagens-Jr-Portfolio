@@ -12,7 +12,8 @@
 .navList {
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center; /* Center items for better spacing */
+
 }
 
 .navItem {
@@ -23,17 +24,56 @@
   color: #61dafb;
   /* Color similar to syntax highlighting */
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.3s ease-in-out;
   font-family: 'Fira Code', monospace;
-  /* Monospaced font for the links */
-  /* Remove inline styles for shadow and apply them here */
-  color: 'white';
-  fontSize: '20px';
+  position: relative; /* Required for absolute positioning of pseudo-elements */
+  padding: 5px 10px; /* Adjust as needed */
+  overflow: hidden; /* Hide the pseudo-elements initially */
+}
+
+.navLink::before,
+.navLink::after {
+  content: '['; /* Content for ::before */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease; /* Animate both transform and color */
+  color: #61dafb; /* Initial color for brackets */
+}
+
+.navLink::after {
+  content: ']'; /* Content for ::after */
+}
+
+
+/* Position the brackets outside of the visible area initially */
+.navLink::before {
+  left: -20px;
+  transform: translateY(-50%) translateX(-100%);
+}
+
+.navLink::after {
+  right: -20px;
+  transform: translateY(-50%) translateX(100%);
+}
+
+/* Animate brackets into view and change color on hover */
+.navLink:hover::before {
+  transform: translateY(-50%) translateX(0);
+  color: black;
+  width: 100px; /* Bracket width on hover */
+}
+
+.navLink:hover::after {
+  transform: translateY(-50%) translateX(0);
+  color: black;
+  width: 10px; /* Bracket width on hover */
+ 
 }
 
 .navLink:hover {
-  color: #98c379;
-  /* Color change on hover for interactivity */
+  color: black; /* Color on hover */
+  background-color: white; /* This changes the background to white on hover */
 }
 
 .headerstyle {
@@ -46,7 +86,6 @@
   justify-content: space-between;
   /* Adjust layout for header elements */
   font-family: 'Fira Code', monospace;
-  /* Monospaced font for the header */
 }
 
 .nav {
@@ -56,11 +95,11 @@
   /* Add a border like an IDE */
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   /* Adjust navigation for top-right placement */
-  margin: 0;
-  height: auto;
-  /* Or a specific height, if necessary */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+  list-style-type: none;
 }
 
 .nav li {
@@ -80,13 +119,15 @@
   /* Color change on hover for interactivity */
 }
 
-
+.nav a.active {
+  color: #ffffff;
+  /* Color change on hover for interactivity */
+}
 /* Style the hamburger menu to fit the coding theme */
 .hamburger {
   background: #000000;
-  /* Same as header background */
-  border: 0;
-  outline: 0;
+  border: none;
+  outline: none;
 }
 
 .hamburger .line {
@@ -97,10 +138,7 @@
 /* Style for when the navigation is expanded */
 .expanded {
   background-color: #181a1f;
-  /* Slightly lighter than the header for contrast */
-  width: 100%;
-  /* Full width for mobile view */
-  display: block;
+  display: block; /* Shown when nav is expanded */
 }
 
 /* Additional backdrop style when nav is expanded */
@@ -139,15 +177,15 @@
   /* Styles for the container of the nav */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
 }
 
 /* Media query for mobile styles */
 @media (max-width: 768px) {
   .nav {
-    padding: 0; /* Reset padding */
-    margin: 0; /* Reset margin */
-    width: 100%; /* Ensure the nav takes full width */
+    padding: 0;
+    margin: 0; 
+    width: 10%; 
     justify-content: space-around; /* This will space your nav items evenly */
   }
 
