@@ -1,21 +1,98 @@
 /* Footer.module.css */
 
 .footerSticky {
-    margin-top: 0%; /* Adjust as needed */
-    text-align: center;
-    padding: 1rem 0; /* Vertical padding */
+    margin-top: 0; /* Adjust as needed */
     color: #000;
-    font-family: Fira Code, monospace;
-  }
-
-  .footer-bottom {
-    background-color: #1b1e24; /* Slightly lighter footer bottom */
-    color: white;
-    text-align: center;
-    padding: 1rem 0; /* Vertical padding */
+    font-family: 'Fira Code', monospace;
+    font-size: 0.7rem; /* Adjust as needed */
   }
   
-  .footer-bottom p {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1b1e24; /* Footer background color */
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: row; /* Set to row instead of column */
+    align-items: center; /* Vertically center items */
+    justify-content: flex-start; /* Start from the left */
+    
+  }
+  
+  .contactInfo p {
+    margin: 0;
+    color: white;
+    font-size: 0.7rem; /* Adjust the font size as needed */
+  }
+  
+  .contactInfo a {
+    color: white;
+    text-decoration: none;
+    position: relative; /* Required for pseudo-elements */
+    padding: 5px 10px; /* Padding for clickable area */
+    overflow: hidden; /* Hide overflow */
+    transition: color 0.3s ease; /* Smooth color transition for hover */
+  }
+  
+  .contactInfo a::before,
+  .contactInfo a::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 1px; /* Thin line for brackets */
+    background-color: white; /* Match the text color */
+    transition: all 0.3s ease; /* Smooth transition for brackets */
+  }
+  
+  .contactInfo a::before {
+    left: 0;
+    transform: translateX(-100%) translateY(-50%);
+  }
+  
+  .contactInfo a::after {
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
+  }
+  
+  .contactInfo a:hover::before,
+  .contactInfo a:hover::after {
+    width: 10px; /* Width of the brackets on hover */
+    transform: translateY(-50%); /* Reset translation on X-axis */
+  }
+  
+  .contactInfo a:hover {
+    color: #61dafb; /* Highlight color on hover */
+  }
+  
+  .footerBottom {
+    color: white;
+    text-align: right;
+  }
+  
+  .footerBottom p {
     margin: 0; /* Remove default margin */
+  }
+  
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contactInfo {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .footerBottom {
+      text-align: center;
+    }
   }
   
