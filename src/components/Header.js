@@ -11,7 +11,8 @@ function Header() {
         src={MyPhoto}
         alt="John"
         className={styles.profilePhoto}
-      />
+      /> <div className={styles.pulsatingCircle}></div> {/* Add this line */}
+       <div className={styles.pulsatingCircle}></div> {/* Add this line */}
       <div className={styles.branding}>
         <h3>John Hagens Portfolio</h3>
         <p>Web Developer</p>
