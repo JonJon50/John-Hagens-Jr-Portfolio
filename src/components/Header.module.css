@@ -132,6 +132,10 @@
   border-radius: 50%;
    z-index: 1; /* Ensure it's under the photo */
   margin-right: 4%;
+  background-image: url('../assets/Image/brain.jpeg'); /* Path to your brain image */
+  background-size: cover; /* Cover the entire area of the circle */
+  background-position: center; /* Center the image within the circle */
+  background-repeat: no-repeat; /* Do not repeat the image */
   box-shadow: 
   0 0 0 0 rgba(97, 218, 251, 0.7),
   0 0 0 0 rgba(97, 218, 251, 0.5),
