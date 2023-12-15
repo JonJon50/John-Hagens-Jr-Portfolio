@@ -1,0 +1,21 @@
+/* Footer.module.css */
+
+.footerSticky {
+    margin-top: 0%; /* Adjust as needed */
+    text-align: center;
+    padding: 1rem 0; /* Vertical padding */
+    color: #000;
+    font-family: Fira Code, monospace;
+  }
+
+  .footer-bottom {
+    background-color: #1b1e24; /* Slightly lighter footer bottom */
+    color: white;
+    text-align: center;
+    padding: 1rem 0; /* Vertical padding */
+  }
+  
+  .footer-bottom p {
+    margin: 0; /* Remove default margin */
+  }
+  
