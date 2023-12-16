@@ -23,6 +23,7 @@
   display: none;
   padding: 10px;
   background-color: #f9f9f9;
+  padding-bottom: 0; /* Remove padding from the bottom */
 }
 
 .projectItem.active .projectDetails {
@@ -54,10 +55,25 @@
   /* Style your subtitle here */
   margin: 0;
   padding-right: 10px; /* Adjust as needed */
+  font-size: 1.2em; /* Example style */
+  font-weight: bold; /* Example style */
 }
 
 .subtitleButtonContainer {
   display: flex;
-  justify-content: space-between; /* This will push the subtitle to the left and buttons to the right */
-  align-items: center; /* This will vertically center the subtitle and buttons */
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted #ccc; /* Add a dotted bottom border */
+  padding-bottom: 10px; /* Add some padding to the bottom */
+  margin-bottom: 10px; /* Add some margin to the bottom */
+  width: 70%; /* Set the width to 70% */
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
+}
+.description {
+  margin-top: 0; /* Adjust space between description and the container above */
+  padding: 0 10px; /* Same horizontal padding as the container above for alignment */
+  width: 70%; /* Match the width of the container above */
+  margin-left: auto; /* Center the description */
+  margin-right: auto; /* Center the description */
 }

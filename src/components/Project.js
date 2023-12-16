@@ -1,6 +1,6 @@
 // components/Project.js
 import React, { useState } from 'react';
-import styles from './Project.module.css'; // Assuming you have a CSS module for the styles
+import styles from './Project.module.css';
 
 function Project({ project }) {
   const [showDetails, setShowDetails] = useState(false);
@@ -9,7 +9,6 @@ function Project({ project }) {
     setShowDetails(prev => !prev);
   };
 
-  // Add a function to compute the class name based on showDetails
   const projectItemClassName = showDetails ? `${styles.projectItem} ${styles.active}` : styles.projectItem;
 
   return (
@@ -17,17 +16,20 @@ function Project({ project }) {
       <div onClick={toggleDetails} className={styles.projectHeader}>
         <h3>[ {project.title} ]</h3>
       </div>
-      {showDetails && (
-        <div className={styles.projectDetails}>
-          {/* Wrap the subtitle and buttons in the new container */}
-          <div className={styles.subtitleButtonContainer}>
-            <h4 className={styles.subtitle}>{project.subtitle}</h4>
-            <div className={styles.buttonContainer}>
-              <a href={project.repo} className={styles.button} target="_blank" rel="noopener noreferrer">repository</a>
-              <a href={project.url} className={styles.button} target="_blank" rel="noopener noreferrer">demo</a>
+      {showDetails && project.projects && (
+        <div>
+          {project.projects.map((subproject, index) => (
+            <div key={index}>
+              <div className={styles.subtitleButtonContainer}>
+                <h4 className={styles.subtitle}>{subproject.subtitle}</h4>
+                <div className={styles.buttonContainer}>
+                  <a href={subproject.repo} className={styles.button} target="_blank" rel="noopener noreferrer">repository</a>
+                  <a href={subproject.url} className={styles.button} target="_blank" rel="noopener noreferrer">demo</a>
+                </div>
+              </div>
+              <p className={styles.description}>{subproject.description}</p>
             </div>
-          </div>
-          <p>{project.description}</p>
+          ))}
         </div>
       )}
     </div>
