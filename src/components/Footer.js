@@ -28,7 +28,7 @@ function Footer() {
           </p>
         </div>
         <div className={styles.footerBottom}>
-          <p>© 2024 John Hagens</p>
+          <p>© 2024 John C Hagens Jr</p>
         </div>
       </footer>
     </div>
