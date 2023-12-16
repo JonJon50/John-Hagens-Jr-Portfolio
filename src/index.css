@@ -15,3 +15,12 @@ code {
   padding: 0;
   box-sizing: border-box; /* This ensures padding does not affect the total width */
 }
+
+/* styles/global.css or wherever you keep your global styles */
+.portfolio-section {
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+.text-center {
+  text-align: center;
+}

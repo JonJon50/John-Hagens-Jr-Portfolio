@@ -1,0 +1,21 @@
+
+[
+    {
+      "id": 1,
+      "title": "...bootcamp",
+      "subtitle": "Fit Resolution",
+      "description": "This project is a website development endeavor aimed at creating an online presence for a small tattoo shop business.",
+      "url": "https://jonjon50.github.io/Fit-Resolution/",
+      "repo": "https://github.com/JonJon50/Fit-Resolution"
+    },
+    {
+      "id": 2,
+      "title": "...work",
+      "subtitle": "Son of Ink",
+      "description": "Protecting loved ones from obesity and generational health problems. By achieving this goal, made us better coder and people by changing the world one code at a time.",
+      "url": "https://son-of-ink.vercel.app/",
+      "repo": "https://github.com/JonJon50/Son-of-Ink"
+    }
+  
+  ]
+  
