@@ -8,13 +8,14 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Resume from "./components/Resume";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ShootingStars from './components/ShootingStars';
 
 function App() {
   return (
     <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <BrowserRouter>
         <Header />
-        <Nav />
+        <Nav /> 
         <main style={{ flex: 1 }}> 
           <Routes>
             <Route path="/" element={<About />} />
@@ -23,6 +24,7 @@ function App() {
             <Route path="/Resume" element={<Resume />} />
           </Routes>
         </main>
+         <ShootingStars />
         <Footer />
       </BrowserRouter>
     </div>
