@@ -29,9 +29,9 @@ function Nav() {
     <li className={styles.navItem}>
       <Link to="/Portfolio" className={styles.navLink}>Portfolio</Link>
     </li>
-    <li className={styles.navItem}>
+    {/* <li className={styles.navItem}>
       <Link to="/Contact" className={styles.navLink}>Contact</Link>
-    </li>
+    </li> */}
     <li className={styles.navItem}>
       <Link to="/Resume" className={styles.navLink}>Resume</Link>
     </li>

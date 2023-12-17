@@ -1,39 +1,23 @@
 /* About.module.css */
 .aboutContainer {
-     display: flex;  
+    display: flex;  
     color: #abb2bf;
     font-family: 'Fira Code', monospace;
-  }
-  
-  .profileGreeting {
-    font-size: 25px;
-  }
-  
-  .profilePhoto {
-    border: 3px solid #61dafb;
-    padding: 4px;
+    padding: 1em; /* Padding inside the 'card' */
+    margin-top: -4rem; /* Moves the container up by 50px */
+    margin-bottom: 2rem; /* Moves the container down by 50px */
   }
   
   .aboutDescription {
     background-color: #1e2127;
     padding: 20px;
     border-radius: 4px;
+    font-size: 1.2em;
   }
   
-  .comment {
-    color: #fafafc;
+  @media (max-width: 768px) {
+    .aboutContainer {
+      font-size: 1em; /* Larger font size for readability on small devices */
+      padding: 1.5em; /* Larger padding for a more spacious layout on small devices */
+    }
   }
-  
-  .info {
-    color: #f8f9fa;
-  }
-  
-  .profileLink {
-    text-decoration: none;
-    color: #61dafb;
-  }
-  
-  .profileLink:hover {
-    color: #98c379;
-  }
-  

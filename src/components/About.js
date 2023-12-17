@@ -1,4 +1,4 @@
-// conponent/About.js
+// component/About.js
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import styles from './About.module.css'; // Import the module here
@@ -23,7 +23,9 @@ function About() {
             {'\n'}
             <span className={styles.info}> yearsOfExperience: '3',</span>
             {'\n'}
-            <span className={styles.info}> hobbies: &#91;'Coding', 'Traveling', 'Coding', 'Cycling', 'Coding'],</span>
+            <span className={styles.info}> hobbies: &#91;'Coding', 'Traveling', 
+            {'\n'}
+            'Coding', 'Cycling', 'Coding'],</span>
             {'\n'}
             <span className={styles.info}> origins: 'African American',</span>
             {'\n'}

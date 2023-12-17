@@ -47,10 +47,7 @@
 
 .navLink::after {
   content: ']';
-  /* Content for ::after */
 }
-
-
 /* Position the brackets outside of the visible area initially */
 .navLink::before {
   left: -20px;
@@ -61,7 +58,6 @@
   right: -20px;
   transform: translateY(-50%) translateX(100%);
 }
-
 /* Animate brackets into view and change color on hover */
 .navLink:hover::before {
   transform: translateY(-50%) translateX(0);
@@ -104,12 +100,10 @@
   /* Add a border like an IDE */
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* Adjust navigation for top-right placement */
   padding: 0;
-  /* No padding */
   margin: 0;
-  /* No margin */
   list-style-type: none;
 }
 
