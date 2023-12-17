@@ -1,0 +1,39 @@
+/* About.module.css */
+.aboutContainer {
+     display: flex;  
+    color: #abb2bf;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  .profileGreeting {
+    font-size: 25px;
+  }
+  
+  .profilePhoto {
+    border: 3px solid #61dafb;
+    padding: 4px;
+  }
+  
+  .aboutDescription {
+    background-color: #1e2127;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .comment {
+    color: #fafafc;
+  }
+  
+  .info {
+    color: #f8f9fa;
+  }
+  
+  .profileLink {
+    text-decoration: none;
+    color: #61dafb;
+  }
+  
+  .profileLink:hover {
+    color: #98c379;
+  }
+  

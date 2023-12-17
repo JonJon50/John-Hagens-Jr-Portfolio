@@ -53,7 +53,7 @@ Go to the internet, type in John Hagens Portfolio, That's it!
 
 🔭 [Deployment Website](https://john-hagens-jr-portfolio.vercel.app/) 🔭
 
-![Photo1](./src/Image/Portfolio1.png)
+![Photo1](../portphoto1.png)
 ![Photo1](./src/Image/Portfolio2.png)
 
 

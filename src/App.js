@@ -1,3 +1,4 @@
+// src/App.js
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -12,15 +13,15 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header></Header>
-          <Nav></Nav>
+        <Header />
+          <Nav />
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Resume" element={<Resume />} />
           </Routes>
-          <Footer></Footer>
+          <Footer />
       </BrowserRouter>
     </div>
   );

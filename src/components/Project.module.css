@@ -1,0 +1,79 @@
+/* Project.module.css */
+.projectItem {
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.projectHeader h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.projectHeader h3:hover {
+  background-color: #f0f0f0;
+}
+
+.projectDetails {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+  padding-bottom: 0; /* Remove padding from the bottom */
+}
+
+.projectItem.active .projectDetails {
+  display: block;
+}
+
+/* Update buttonContainer to remove the margin-top and adjust as needed */
+.buttonContainer {
+  display: flex;
+  gap: 10px; /* This will give some space between your buttons */
+  padding: 0; /* Adjust as needed */
+  margin: 0; /* Adjust if needed */
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.subtitle {
+  /* Style your subtitle here */
+  margin: 0;
+  padding-right: 10px; /* Adjust as needed */
+  font-size: 1.2em; /* Example style */
+  font-weight: bold; /* Example style */
+}
+
+.subtitleButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted #ccc; /* Add a dotted bottom border */
+  padding-bottom: 10px; /* Add some padding to the bottom */
+  margin-bottom: 10px; /* Add some margin to the bottom */
+  width: 70%; /* Set the width to 70% */
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
+}
+.description {
+  margin-top: 0; /* Adjust space between description and the container above */
+  padding: 0 10px; /* Same horizontal padding as the container above for alignment */
+  width: 70%; /* Match the width of the container above */
+  margin-left: auto; /* Center the description */
+  margin-right: auto; /* Center the description */
+}

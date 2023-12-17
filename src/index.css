@@ -1,18 +1,26 @@
+/* index.css */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(269, 57%, 56%);
-  background-image: linear-gradient(43deg, #4158D0 2%, #C850C0 46%, #FFCC70 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  font-family: 'monospaced', 'Roboto Mono', monospace; /* Monospaced font for coding feel */
+  background-color: #f9f7f7; /* Darker background for code editor look */
+  color: #abb2bf; /* Lighter text color for readability */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'monospaced', 'Roboto Mono', monospace;
+}
+/* In your App.css or a global stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This ensures padding does not affect the total width */
+}
+
+/* styles/global.css or wherever you keep your global styles */
+.portfolio-section {
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+.text-center {
+  text-align: center;
 }

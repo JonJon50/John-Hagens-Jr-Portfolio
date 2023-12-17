@@ -1,53 +1,41 @@
+// conponent/About.js
 import React from "react";
-import { Col, Image, Row, Stack } from "react-bootstrap";
-import MyPhoto from "../assets/Image/me.png";
+import { Col, Row } from "react-bootstrap";
+import styles from './About.module.css'; // Import the module here
 
 function About() {
   return (
-    <Row className="d-flex justify-content-center align-items-center min-vh-100">
-      <Col className="d-flex flex-column text-center " xs={12} lg={4}>
-        <a
-          href="https://github.com/JonJon50"
-          style={{ textDecoration: "none" }}
-        >
-          <div
-            style={{ color: "white", fontFamily: "Arial", fontSize: "25px" }}
-          >
-            Hi, I'm John
-          </div>
-          <Image
-            src={MyPhoto}
-            className="shadow-md my-4 img-fluid rounded shadow-lg border-round p-4 img-hover"
-          />
-        </a>
-      </Col>
-      <Col
-        xs={12}
-        lg={8}
-        className="my-5 mb-3 shadow-md my-4 img-fluid rounded shadow-lg border-round p-2 img-hover"
-      >
-        <div className="d-flex align-items-start">
-          <Stack gap={3}>
-            <div className="transparent" style={{ color: "white" }}>
-              My name is John and I'm a motivated tech professional and problem
-              solver with a background in big data. Experience with analytical
-              thinking, project manage, strong team skills, and excellent verbal
-              and written communication.
-            </div>
-            <div className="transparent" style={{ color: "white" }}>
-              Trained at [University of Central Florida (UCF)] coding boot camp
-              and earned a certificate in Full-Stack Web Development.
-            </div>
-            <div className="transparent" style={{ color: "white" }}>
-              Innovative problem-solver passionate about developing apps;
-              focused development. Strengths in creativity, teamwork, and
-              building projects from ideation to execution.
-            </div>
-          </Stack>
-        </div>
+    <Row className={`${styles.aboutContainer} d-flex justify-content-center align-items-center min-vh-100`}>
+      <Col xs={12} lg={4} className={styles.aboutDescription}>
+        <pre>
+          <code>
+            <span className={styles.comment}> About me </span>
+            {'\n\n'}
+            <span className={styles.info}> firstName: ‘John’, </span>
+            {'\n'}
+            <span className={styles.info}> lastName: ‘Hagens’, </span>
+            {'\n'}
+            <span className={styles.info}> title: 'Full Stack Javascript Developer',</span>
+            {'\n'}
+            <span className={styles.info}> openToRelocate: true,</span>
+            {'\n'}
+            <span className={styles.info}> remotePosition: true,</span>
+            {'\n'}
+            <span className={styles.info}> yearsOfExperience: '3',</span>
+            {'\n'}
+            <span className={styles.info}> hobbies: &#91;'Coding', 'Traveling', 'Coding', 'Cycling', 'Coding'],</span>
+            {'\n'}
+            <span className={styles.info}> origins: 'African American',</span>
+            {'\n'}
+            <span className={styles.info}> remotePosition: true,</span>
+            {'\n'}
+            <span className={styles.info}> yearsOfExperience: '3',</span>
+          </code>
+        </pre>
       </Col>
     </Row>
   );
 }
 
 export default About;
+

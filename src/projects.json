@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "...bootcamp",
+    "projects": [
+      {
+        "subtitle": "Fit Resolution",
+        "description": "This project is a website development endeavor aimed at creating an online presence for a small tattoo shop business.",
+        "url": "https://jonjon50.github.io/Fit-Resolution/",
+        "repo": "https://github.com/JonJon50/Fit-Resolution"
+      },
+      {
+        "subtitle": "Project Three",
+        "description": "Description for project three.",
+        "url": "https://project-three.com",
+        "repo": "https://github.com/username/project-three"
+      },
+      {
+        "subtitle": "Project Four",
+        "description": "Description for project four.",
+        "url": "https://project-four.com",
+        "repo": "https://github.com/username/project-four"
+      },
+      {
+        "subtitle": "Project Five",
+        "description": "Description for project five.",
+        "url": "https://project-five.com",
+        "repo": "https://github.com/username/project-five"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "...work",
+    "projects": [
+      {
+        "subtitle": "Son of Ink",
+        "description": "Protecting loved ones from obesity and generational health problems. By achieving this goal, made us better coder and people by changing the world one code at a time.",
+        "url": "https://son-of-ink.vercel.app/",
+        "repo": "https://github.com/JonJon50/Son-of-Ink"
+      },
+      {
+        "subtitle": "Project Two",
+        "description": "Description for project two.",
+        "url": "https://project-two.com",
+        "repo": "https://github.com/username/project-two"
+      }
+    ]
+  }
+]

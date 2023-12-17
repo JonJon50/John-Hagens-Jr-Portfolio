@@ -1,33 +1,34 @@
+import React from "react";
+import styles from "./Footer.module.css";
+
 function Footer() {
   return (
-    <div style={{ marginTop: "30%" }} className="footerstiky">
-      <footer>
-        <div className="footer-content">
-          <h2>Get in Touch</h2>
+    <div className={styles.footerSticky}>
+      <footer className={styles.footer}>
+        <div className={styles.contactInfo}>
           <p>
-            If you have any questions or comments, please feel free to contact
-            me.
+            <a href="tel:386-290-4612" target="_blank" rel="noopener noreferrer">
+              386-290-4612
+            </a>
           </p>
-          <ul className="social-icons">
-            <li>
-              <a href="https://github.com/YOUR_USERNAME">
-                <i className="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/YOUR_USERNAME">
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:ginuwine104@gmail.com">
-                <i className="fas fa-envelope"></i>
-              </a>
-            </li>
-          </ul>
+          <p>
+            <a href="https://www.linkedin.com/in/john-hagens-55b15212a/" target="recruiters" rel="noopener noreferrer">
+              linkedin 
+            </a>
+          </p>
+          <p>
+            <a href="https://github.com/JonJon50" target="developers" rel="noopener noreferrer">
+              github
+            </a>
+          </p>
+          <p>
+            <a href="mailto:ginuwine104@gmail.com" target="email" rel="noopener noreferrer">
+              ginuwine104@gmail.com
+            </a>
+          </p>
         </div>
-        <div className="footer-bottom">
-          <p>&copy; 2023 John Hagens. All Rights Reserved.</p>
+        <div className={styles.footerBottom}>
+          <p>© 2024 John C Hagens Jr</p>
         </div>
       </footer>
     </div>
@@ -35,3 +36,4 @@ function Footer() {
 }
 
 export default Footer;
+

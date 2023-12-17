@@ -1,0 +1,222 @@
+/* Nav.module.css */
+.navHeader {
+  background-color: #000102;
+  /* Darker color for the header to mimic menu bar */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  /* Center items for better spacing */
+
+}
+
+.navItem {
+  margin: 0 1rem;
+}
+
+.navLink {
+  color: #61dafb;
+  /* Color similar to syntax highlighting */
+  text-decoration: none;
+  font-family: 'Fira Code', monospace;
+  position: relative;
+  padding: 5px 10px
+}
+
+.navLink::before,
+.navLink::after {
+  content: '[';
+  /* Content for ::before */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  /* Animate both transform and color */
+  color: #61dafb;
+  /* Initial color for brackets */
+  width: 10px;
+  /* Initial width for the brackets */
+}
+
+.navLink::after {
+  content: ']';
+  /* Content for ::after */
+}
+
+
+/* Position the brackets outside of the visible area initially */
+.navLink::before {
+  left: -20px;
+  transform: translateY(-50%) translateX(-100%);
+}
+
+.navLink::after {
+  right: -20px;
+  transform: translateY(-50%) translateX(100%);
+}
+
+/* Animate brackets into view and change color on hover */
+.navLink:hover::before {
+  transform: translateY(-50%) translateX(0);
+  color: black;
+  width: 100px;
+  /* Bracket width on hover */
+  width: 10px;
+  /* Adjusted width on hover */
+}
+
+.navLink:hover::after {
+  transform: translateY(-50%) translateX(0);
+  color: black;
+  width: 10px;
+  /* Bracket width on hover */
+}
+
+.navLink:hover {
+  color: black;
+  /* Color on hover */
+
+}
+
+.headerstyle {
+  background-color: #21252b;
+  /* Darker color for the header to mimic menu bar */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Adjust layout for header elements */
+  font-family: 'Fira Code', monospace;
+}
+
+.nav {
+  background-color: #000000;
+  /* Consistent background with the header */
+  border-bottom: 3px solid #61dafb;
+  /* Add a border like an IDE */
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  /* Adjust navigation for top-right placement */
+  padding: 0;
+  /* No padding */
+  margin: 0;
+  /* No margin */
+  list-style-type: none;
+}
+
+.nav li {
+  margin: 0 1rem;
+  /* Space out navigation items */
+}
+
+.nav a {
+  color: #61dafb;
+  /* Color similar to syntax highlighting */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  /* Color change on hover for interactivity */
+}
+
+.nav a.active {
+  color: #ffffff;
+  /* Color change on hover for interactivity */
+}
+
+/* Style the hamburger menu to fit the coding theme */
+.hamburger {
+  background: #000000;
+  border: none;
+  outline: none;
+}
+
+.hamburger .line {
+  background-color: #61dafb;
+  /* Highlight color */
+}
+
+/* Style for when the navigation is expanded */
+.expanded {
+  background-color: #181a1f;
+  display: block;
+  /* Shown when nav is expanded */
+}
+
+/* Additional backdrop style when nav is expanded */
+.expanded+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dim the background */
+  z-index: 5;
+  /* Behind the nav but above other content */
+}
+
+.backdrop {
+  /* Styles for the backdrop */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  /* Ensure it's above the content but below the expanded nav */
+}
+
+.sidenav {
+  /* Styles for your side navigation, if you're using it */
+  background-color: #000000;
+  color: white;
+  width: 160rem;
+}
+
+.navContainer {
+  /* Styles for the container of the nav */
+  display: flex;
+  align-items: center;
+
+}
+
+/* Media query for mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    /* Full width for mobile view */
+    width: 100%;
+    /* Center the navigation items */
+    justify-content: center;
+    /* Wrap items if needed */
+    flex-wrap: wrap;
+  }
+
+  .navItem {
+    /* Make each nav item take the full width */
+    width: 100%;
+    /* Center the text in the nav item */
+    text-align: center;
+    /* Reset the margin for nav items */
+    margin: 0;
+  }
+
+
+  .navContainer {
+    /* Center the container of the nav */
+    justify-content: center;
+  }
+
+}

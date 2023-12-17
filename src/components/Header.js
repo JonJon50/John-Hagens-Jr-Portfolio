@@ -1,26 +1,25 @@
+// Header.js
+
+import React from "react";
+import MyPhoto from "../assets/Image/me.png";
+import styles from './Header.module.css'; // Make sure to create this CSS module for the Header
+
 function Header() {
   return (
-    <div className="headerstyle container flex-row justify-center align-center">
-      <div
-        style={{
-          font: "",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          width: "100%",
-        }}
-      >
-        <h1
-          style={{
-            textShadow: "2px 2px 3px #FFFFFF",
-            fontFamily: "Apple Chancery, sans-serif",
-          }}
-        >
-          John Hagens Portfolio
-        </h1>
-        <p>Coding for the Future!</p>
+    <header className={styles.headerStyle}>
+      <img
+        src={MyPhoto}
+        alt="selfie of John Hagens"
+        className={styles.profilePhoto}
+      /> 
+       <div className={styles.pulsatingCircle}></div> {/* Add this line */}
+      <div className={styles.branding}>
+        <h3>John Hagens Portfolio</h3>
+        <p>Web Developer</p>
       </div>
-    </div>
+      {/* Navigation goes here */}
+    </header>
   );
 }
+
 export default Header;
