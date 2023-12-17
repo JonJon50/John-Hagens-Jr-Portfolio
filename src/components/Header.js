@@ -1,8 +1,7 @@
 // Header.js
-
 import React from "react";
 import MyPhoto from "../assets/Image/me.png";
-import styles from './Header.module.css'; // Make sure to create this CSS module for the Header
+import styles from "./Header.module.css";
 
 function Header() {
   return (
@@ -11,13 +10,12 @@ function Header() {
         src={MyPhoto}
         alt="selfie of John Hagens"
         className={styles.profilePhoto}
-      /> 
-       <div className={styles.pulsatingCircle}></div> {/* Add this line */}
+      />
+      <div className={styles.pulsatingCircle}></div>
       <div className={styles.branding}>
         <h3>John Hagens Portfolio</h3>
         <p>Web Developer</p>
       </div>
-      {/* Navigation goes here */}
     </header>
   );
 }

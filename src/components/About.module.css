@@ -1,23 +1,25 @@
 /* About.module.css */
 .aboutContainer {
-    display: flex;  
-    color: #abb2bf;
-    font-family: 'Fira Code', monospace;
-    padding: 1em; /* Padding inside the 'card' */
-    margin-top: -4rem; /* Moves the container up by 50px */
-    margin-bottom: 2rem; /* Moves the container down by 50px */
+  display: flex;
+  color: #abb2bf;
+  font-family: 'Fira Code', monospace;
+  padding: 1em;
+  margin-top: -4rem;
+  /* Moves the container up by 50px */
+  margin-bottom: 2rem;
+  /* Moves the container down by 50px */
+}
+
+.aboutDescription {
+  background-color: #1e2127;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    font-size: 1em;
+    padding: 1.5em;
   }
-  
-  .aboutDescription {
-    background-color: #1e2127;
-    padding: 20px;
-    border-radius: 4px;
-    font-size: 1.2em;
-  }
-  
-  @media (max-width: 768px) {
-    .aboutContainer {
-      font-size: 1em; /* Larger font size for readability on small devices */
-      padding: 1.5em; /* Larger padding for a more spacious layout on small devices */
-    }
-  }
+}

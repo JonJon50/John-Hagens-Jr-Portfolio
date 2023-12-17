@@ -10,16 +10,16 @@
         "repo": "https://github.com/JonJon50/Fit-Resolution"
       },
       {
-        "subtitle": "Project Three",
-        "description": "Description for project three.",
-        "url": "https://project-three.com",
-        "repo": "https://github.com/username/project-three"
+        "subtitle": "The Social App",
+        "description": "Social Media Website built with React, JavaScript, MongoDB, Node.js, Express.js Apollo Sandbox .",
+        "url": "https://socialsphere-1adc1959047d.herokuapp.com/LandingPage",
+        "repo": "https://github.com/JonJon50/TheSocialApp"
       },
       {
-        "subtitle": "Project Four",
-        "description": "Description for project four.",
-        "url": "https://project-four.com",
-        "repo": "https://github.com/username/project-four"
+        "subtitle": "Daily 5 Day Forecast",
+        "description": "Javascript, API Build pulling in 5 day forecast with DOM implementing local storage.",
+        "url": "https://jonjon50.github.io/Daily-5-Day-Forecast/",
+        "repo": "https://github.com/JonJon50/Daily-5-Day-Forecast?tab=readme-ov-file"
       },
       {
         "subtitle": "Project Five",
@@ -40,10 +40,27 @@
         "repo": "https://github.com/JonJon50/Son-of-Ink"
       },
       {
-        "subtitle": "Project Two",
-        "description": "Description for project two.",
-        "url": "https://project-two.com",
-        "repo": "https://github.com/username/project-two"
+        "subtitle": "CentralFL-Homes",
+        "description": "PHP, Lavavel, Alpine.js, Livewire, vite, API, MVC  .",
+        "repo": "https://github.com/JonJon50/CentralFL-Homes"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "...for fun",
+    "projects": [
+      {
+        "subtitle": "Code Quiz",
+        "description": "Quiz built with JavaScript, HTML, CSS, and local storage.",
+        "url": "https://jonjon50.github.io/Code-Quiz-JCH/",
+        "repo": "https://github.com/JonJon50/Code-Quiz-JCH"
+      },
+      {
+        "subtitle": "Registration Form",
+        "description": "HTML and CSS a form.",
+        "url": "https://jonjon50.github.io/Registraction-Form-project/",
+        "repo": "https://github.com/JonJon50/Registraction-Form-project"
       }
     ]
   }
