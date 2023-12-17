@@ -5,7 +5,7 @@
     "projects": [
       {
         "subtitle": "Fit Resolution",
-        "description": "This project is a website development endeavor aimed at creating an online presence for a small tattoo shop business.",
+        "description": "Protecting loved ones from obesity and generational health problems. By achieving this goal, made us better coder and people by changing the world one code at a time.",
         "url": "https://jonjon50.github.io/Fit-Resolution/",
         "repo": "https://github.com/JonJon50/Fit-Resolution"
       },
@@ -22,10 +22,10 @@
         "repo": "https://github.com/JonJon50/Daily-5-Day-Forecast?tab=readme-ov-file"
       },
       {
-        "subtitle": "Project Five",
-        "description": "Description for project five.",
-        "url": "https://project-five.com",
-        "repo": "https://github.com/username/project-five"
+        "subtitle": "Back End Database",
+        "description": "Built with Insomnia, JavaScript, mySQL, Node.js, Sequelize, Express, DBeaver. This project involved creating a database creating columns and tables and seeding data. mySQL, Sequelize, Express, Node.js, and CRUD.",
+        "url": "https://drive.google.com/file/d/16GpRPPuBO1EuKKWVcw59faswvvdspJrM/view",
+        "repo": "https://github.com/JonJon50/Back-End-Database"
       }
     ]
   },
@@ -35,13 +35,13 @@
     "projects": [
       {
         "subtitle": "Son of Ink",
-        "description": "Protecting loved ones from obesity and generational health problems. By achieving this goal, made us better coder and people by changing the world one code at a time.",
+        "description": "Tattoo Shop Website built with React, JavaScript, MongoDB, Node.js, Express.js Apollo Sandbox .",
         "url": "https://son-of-ink.vercel.app/",
         "repo": "https://github.com/JonJon50/Son-of-Ink"
       },
       {
         "subtitle": "CentralFL-Homes",
-        "description": "PHP, Lavavel, Alpine.js, Livewire, vite, API, MVC  .",
+        "description": "Real Estate Home Builders PHP, Lavavel, Alpine.js, Livewire, Vite, API, MVC.",
         "repo": "https://github.com/JonJon50/CentralFL-Homes"
       }
     ]
@@ -50,6 +50,12 @@
     "id": 2,
     "title": "...for fun",
     "projects": [
+      {
+        "subtitle": "FA 3D Portfolio",
+        "description": "Next.js and Three.js 3D Portfolio. Using React/Hook - useState, useEffect, JavaScript, Next.js, Three.js, Tailwind and Vercel.",
+        "url": "https://fa-3-d-portfolio.vercel.app/",
+        "repo": "https://github.com/JonJon50/FA_3D_Portfolio"
+      },
       {
         "subtitle": "Code Quiz",
         "description": "Quiz built with JavaScript, HTML, CSS, and local storage.",

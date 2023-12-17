@@ -14,7 +14,6 @@
   display: flex;
   justify-content: center;
   /* Center items for better spacing */
-
 }
 
 .navItem {
@@ -77,8 +76,6 @@
 
 .navLink:hover {
   color: black;
-  /* Color on hover */
-
 }
 
 .headerstyle {
@@ -124,11 +121,6 @@
   /* Color change on hover for interactivity */
 }
 
-.nav a.active {
-  color: #ffffff;
-  /* Color change on hover for interactivity */
-}
-
 /* Style the hamburger menu to fit the coding theme */
 .hamburger {
   background: #000000;
@@ -138,7 +130,6 @@
 
 .hamburger .line {
   background-color: #61dafb;
-  /* Highlight color */
 }
 
 /* Style for when the navigation is expanded */
@@ -190,26 +181,19 @@
 /* Media query for mobile styles */
 @media (max-width: 768px) {
   .nav {
-    /* Full width for mobile view */
     width: 100%;
-    /* Center the navigation items */
     justify-content: center;
-    /* Wrap items if needed */
     flex-wrap: wrap;
   }
 
   .navItem {
-    /* Make each nav item take the full width */
     width: 100%;
-    /* Center the text in the nav item */
     text-align: center;
-    /* Reset the margin for nav items */
     margin: 0;
   }
 
 
   .navContainer {
-    /* Center the container of the nav */
     justify-content: center;
   }
 

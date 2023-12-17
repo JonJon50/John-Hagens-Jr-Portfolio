@@ -7,7 +7,7 @@
 }
 
 .projectHeader h3 {
-  display: inline-block;
+  text-align: center; /* Center the title text */
   margin: 0;
   padding: 5px;
   font-size: 18px;
@@ -31,15 +31,32 @@
   display: block;
 }
 
+.projectHeader .title {
+  display: inline; /* Inline display for the title */
+  margin: 0 5px; /* Add some space around the title */
+}
+
+.projectHeader .bracket {
+  transition: transform 0.3s ease; /* Smooth transition for brackets */
+  display: inline-block; /* Allows transform to work on span */
+}
+
+/* Hover effects */
+.projectHeader h3:hover .bracket {
+  transform: translateX(-10px); /* Move left bracket to the left */
+  color: #61dafb;
+}
+
+.projectHeader h3:hover .bracket:last-of-type {
+  transform: translateX(10px); /* Move right bracket to the right */
+}
+
 /* Update buttonContainer to remove the margin-top and adjust as needed */
 .buttonContainer {
   display: flex;
   gap: 10px;
-  /* This will give some space between your buttons */
   padding: 0;
-  /* Adjust as needed */
   margin: 0;
-  /* Adjust if needed */
 }
 
 .button {
@@ -59,19 +76,14 @@
   /* Style your subtitle here */
   margin: 0;
   padding-right: 10px;
-  /* Adjust as needed */
   font-size: 1.2em;
-  /* Example style */
   font-weight: bold;
-  /* Example style */
 }
 
 .subtitleButtonContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  /* Add a dotted bottom border */
   padding-bottom: 10px;
   /* Add some padding to the bottom */
   margin-bottom: 10px;

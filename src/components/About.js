@@ -39,7 +39,6 @@ function About() {
             {"\n"}
             <span className={styles.info}> remotePosition: true,</span>
             {"\n"}
-            <span className={styles.info}> yearsOfExperience: '3',</span>
           </code>
         </pre>
       </Col>
