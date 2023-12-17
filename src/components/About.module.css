@@ -1,39 +1,25 @@
 /* About.module.css */
 .aboutContainer {
-     display: flex;  
-    color: #abb2bf;
-    font-family: 'Fira Code', monospace;
+  display: flex;
+  color: #abb2bf;
+  font-family: 'Fira Code', monospace;
+  padding: 1em;
+  margin-top: -4rem;
+  /* Moves the container up by 50px */
+  margin-bottom: 2rem;
+  /* Moves the container down by 50px */
+}
+
+.aboutDescription {
+  background-color: #1e2127;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    font-size: 1em;
+    padding: 1.5em;
   }
-  
-  .profileGreeting {
-    font-size: 25px;
-  }
-  
-  .profilePhoto {
-    border: 3px solid #61dafb;
-    padding: 4px;
-  }
-  
-  .aboutDescription {
-    background-color: #1e2127;
-    padding: 20px;
-    border-radius: 4px;
-  }
-  
-  .comment {
-    color: #fafafc;
-  }
-  
-  .info {
-    color: #f8f9fa;
-  }
-  
-  .profileLink {
-    text-decoration: none;
-    color: #61dafb;
-  }
-  
-  .profileLink:hover {
-    color: #98c379;
-  }
-  
+}

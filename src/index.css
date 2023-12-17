@@ -5,22 +5,23 @@ body {
   background-color: #f9f7f7; /* Darker background for code editor look */
   color: #abb2bf; /* Lighter text color for readability */
 }
-
 code {
   font-family: 'monospaced', 'Roboto Mono', monospace;
 }
-/* In your App.css or a global stylesheet */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* This ensures padding does not affect the total width */
+  box-sizing: border-box; 
 }
-
-/* styles/global.css or wherever you keep your global styles */
 .portfolio-section {
   padding: 50px;
   background-color: #f8f8f8;
 }
 .text-center {
   text-align: center;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

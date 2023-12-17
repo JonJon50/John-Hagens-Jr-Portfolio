@@ -1,6 +1,6 @@
 // src/App.js
 import About from "./components/About";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
@@ -11,20 +11,23 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <BrowserRouter>
         <Header />
-          <Nav />
+        <Nav />
+        <main style={{ flex: 1 }}> 
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/Portfolio" element={<Portfolio />} />
-            <Route path="/Contact" element={<Contact />} />
+            {/* <Route path="/Contact" element={<Contact />} /> */}
             <Route path="/Resume" element={<Resume />} />
           </Routes>
-          <Footer />
+        </main>
+        <Footer />
       </BrowserRouter>
     </div>
   );
 }
+
 
 export default App;
