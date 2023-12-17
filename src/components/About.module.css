@@ -5,9 +5,9 @@
   align-items: center;
   color: #abb2bf;
   font-family: 'Fira Code', monospace;
-  margin-top: -10%; /* Remove negative margin if it pushes the content down */
-  margin-bottom: -2%; /* Remove any bottom margin */
-  padding: 0; /* Remove padding to reduce total height */ 
+  margin-top: -10%; 
+  margin-bottom: -2%; 
+  padding: 0; 
 }
 
 .aboutDescription {
@@ -15,13 +15,13 @@
   padding: 20px;
   border-radius: 4px;
   font-size: 1.2em;
-  overflow: auto; /* Enable scrolling within the element if content overflows */
+  overflow: auto; 
 }
 
 /* Example media query adjustment for smaller screens */
 @media (max-width: 768px) {
   .aboutContainer {
-    padding: 1em; /* Add padding on smaller screens if necessary */
-    height: auto; /* Override the height for mobile devices to be automatic */
+    padding: 1em; 
+    height: auto; 
   }
 }
