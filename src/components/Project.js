@@ -14,7 +14,11 @@ function Project({ project }) {
   return (
     <div className={projectItemClassName}>
       <div onClick={toggleDetails} className={styles.projectHeader}>
-        <h3>[ {project.title} ]</h3>
+      <h3>
+          <span className={styles.bracket}>[</span>
+          <span className={styles.title}>{project.title}</span>
+          <span className={styles.bracket}>]</span>
+        </h3>
       </div>
       {showDetails && project.projects && (
         <div>
