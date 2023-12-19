@@ -109,3 +109,15 @@
   /* Center the description */
   border-bottom: 1px dotted #ccc;
 }
+
+/* Add a media query to adjust the layout for mobile screens */
+@media (max-width: 768px) {
+  .subtitleButtonContainer {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: flex-start; /* Align items to the left on mobile */
+  }
+
+  .description {
+    width: 100%; /* Take full width on mobile */
+  }
+}
