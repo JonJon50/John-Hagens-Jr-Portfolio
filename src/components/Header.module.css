@@ -120,6 +120,23 @@
     font-size: 2rem; /* Adjust to the size appropriate for mobile */
     
   }
+
+  .subtitleButtonContainer {
+    flex-direction: column; /* Stack flex items vertically on mobile */
+    align-items: flex-start; /* Align items to the start (left) */
+  }
+
+  .buttonContainer {
+    width: 100%; /* Take full width of the container */
+    justify-content: center; /* Center buttons if needed */
+    margin-top: 10px; /* Add space between description and buttons */
+  }
+
+  .button {
+    width: auto; /* Let buttons take the width of their content */
+    margin: 5px; /* Add margin to separate stacked buttons */
+  }
+
 }
 
 /* Add these styles to your Header.module.css */
@@ -141,6 +158,7 @@
   0 0 0 0 rgba(97, 218, 251, 0.5),
   0 0 0 0 rgba(97, 218, 251, 0.3);
 animation: pulse 2s infinite ease-out;
+z-index: 0; /* Ensure it's behind the profile photo and text */
 }
 
 @keyframes pulse {
