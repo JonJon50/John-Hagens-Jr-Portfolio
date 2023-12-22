@@ -34,6 +34,7 @@
 .projectHeader .title {
   display: inline; /* Inline display for the title */
   margin: 0 5px; /* Add some space around the title */
+  color: #000000;
 }
 
 .projectHeader .bracket {
@@ -45,6 +46,10 @@
 .projectHeader h3:hover .bracket {
   transform: translateX(-10px); /* Move left bracket to the left */
   color: #61dafb;
+}
+
+.bracket {
+color: #000000;
 }
 
 .projectHeader h3:hover .bracket:last-of-type {
@@ -78,6 +83,7 @@
   padding-right: 10px;
   font-size: 1.2em;
   font-weight: bold;
+  color: #000000;
 }
 
 .subtitleButtonContainer {
@@ -108,6 +114,7 @@
   margin-right: auto;
   /* Center the description */
   border-bottom: 1px dotted #ccc;
+  color: #000000;
 }
 
 /* Add a media query to adjust the layout for mobile screens */
