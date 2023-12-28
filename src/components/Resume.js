@@ -1,42 +1,26 @@
-import React, { useState } from "react";
-import page1 from "../assets/Image/Resume1.png";
-import page2 from "../assets/Image/Certificate.png";
+import React, { useState } from 'react';
+import page1 from '../assets/Image/Resume1.png';
+import page2 from '../assets/Image/Certificate.png';
+import { motion } from 'framer-motion';
+import styles from './Resume.module.css'; // Adjust the import path as needed
 
-const containerStyle = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center", 
-  justifyContent: "center", 
-  minHeight: "100vh", 
-  marginLeft: "10%", 
-  marginRight: "10%", 
-  padding: "50px",
-  font : "20px Arial, sans-serif",
-};
-
-const headingStyle = {
-  textAlign: "center",
-};
-
-const linkStyle = {
-  textAlign: "center",
-  marginTop: "20px",
-  textDecoration: "none", 
-};
-
-const imageStyle = {
-  display: "block",
-  margin: "0 auto",
-  maxWidth: "100%",
-  height: "auto",
-  boxShadow: "0 0 1000px rgba(0, 0, 0, 0.5)",
-  borderRadius: "50px",
-};
-
-const bracketStyle = {
-  color: "#61dafb", 
-  userSelect: "none", 
-  fontSize: "1em", 
+const imageVariants = {
+  animate: (i) => ({
+    rotate: [0, 360],
+    x: ["0%", "-20%", "0%"],
+    y: ["0%", "30%", "0%"],
+    transition: {
+      loop: 2,
+      duration: 5,
+      ease: "linear",
+      times: [0, 0.5, 1],
+      repeatDelay: 1
+    },
+  }),
+  exit: {
+    opacity: 0,
+    transition: { duration: 1 }
+  }
 };
 
 function Resume() {
@@ -46,33 +30,47 @@ function Resume() {
     setIsHovered(!isHovered);
   };
 
-  // Adjust the link style to be inline-block to allow for the hover effect
-  const linkContainerStyle = {
-    ...linkStyle,
-    display: 'inline-block',
-    cursor: 'pointer' // To show it's clickable
-  };
-
   return (
-    <div style={containerStyle} className="resume-container">
-      <h1 style={headingStyle}>Resume</h1>
-      {/* Wrap the link and brackets in a div and apply the hover styles to this div */}
+    <div className={styles.container}>
+      <h1 className={styles.heading}>Resume</h1>
+
       <div
-        style={linkContainerStyle}
+        className={styles.linkContainer}
         onMouseEnter={toggleHover}
         onMouseLeave={toggleHover}
       >
-        {isHovered && <span style={bracketStyle}>[</span>}
-        <a href={page1} download style={{ color: "inherit", textDecoration: "none" }}>
-         ~ Download ~
+        {isHovered && <span className={styles.bracket}>[</span>}
+        <a href={page1} download className={styles.link}>
+          ~ Download ~
         </a>
-        {isHovered && <span style={bracketStyle}>]</span>}
+        {isHovered && <span className={styles.bracket}>]</span>}
       </div>
-      <img alt="resumePage1" src={page1} style={imageStyle} />
-      <h2 style={headingStyle}>
+
+      <motion.img 
+        alt="resumePage1" 
+        src={page1} 
+        className={styles.image}
+        variants={imageVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        custom={0}
+      />
+      
+      <h2 className={styles.heading}>
         Certification 
       </h2>
-      <img alt="resumePage2" src={page2} style={imageStyle} />
+
+      <motion.img 
+        alt="resumePage2" 
+        src={page2} 
+        className={styles.image}
+        variants={imageVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        custom={1}
+      />
     </div>
   );
 }

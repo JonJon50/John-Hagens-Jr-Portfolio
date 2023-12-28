@@ -14,21 +14,23 @@ function Project({ project }) {
   return (
     <div className={projectItemClassName}>
       <div onClick={toggleDetails} className={styles.projectHeader}>
-      <h3>
+        <h3>
           <span className={styles.bracket}>[</span>
           <span className={styles.title}>{project.title}</span>
           <span className={styles.bracket}>]</span>
         </h3>
       </div>
-      {showDetails && project.projects && (
-        <div>
-          {project.projects.map((subproject, index) => (
+      {/* Show project details when showDetails is true */}
+      {showDetails && (
+        <div className={styles.projectDetails}>
+          {/* Conditionally render subproject details if they exist */}
+          {project.projects && project.projects.map((subproject, index) => (
             <div key={index}>
               <div className={styles.subtitleButtonContainer}>
                 <h4 className={styles.subtitle}>{subproject.subtitle}</h4>
                 <div className={styles.buttonContainer}>
-                  <a href={subproject.repo} className={styles.button} target="_blank" rel="noopener noreferrer">repository</a>
-                  <a href={subproject.url} className={styles.button} target="_blank" rel="noopener noreferrer">demo</a>
+                  <a href={subproject.repo} className={styles.button} target="_blank" rel="noopener noreferrer">Repository</a>
+                  <a href={subproject.url} className={styles.button} target="_blank" rel="noopener noreferrer">Demo</a>
                 </div>
               </div>
               <p className={styles.description}>{subproject.description}</p>
