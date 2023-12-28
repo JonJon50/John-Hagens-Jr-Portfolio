@@ -128,3 +128,40 @@ color: #000000;
     width: 100%; /* Take full width on mobile */
   }
 }
+
+/* for project pic under for fun */
+.projectGallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Set up for six columns */
+  gap: 15px; /* Spacing between images */
+  padding: 20px; /* Padding around the gallery */
+  justify-content: center; /* Center items in the grid */
+  align-items: center;
+}
+
+.projectImage {
+  width: 100%; /* Full width of the grid column */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for styling */
+  border-radius: 4px; /* Slight rounding of corners for style */
+}
+
+/* Responsive adjustments for the gallery */
+/* Responsive adjustments for the gallery */
+@media (max-width: 1200px) {
+  .projectGallery {
+    grid-template-columns: repeat(3, 1fr); /* Three images per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .projectGallery {
+    grid-template-columns: repeat(2, 1fr); /* Two images per row for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .projectGallery {
+    grid-template-columns: 1fr; /* One image per row for extra small screens */
+  }
+}
