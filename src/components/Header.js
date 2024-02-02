@@ -1,6 +1,6 @@
 // Header.js
 import React from "react";
-import MyPhoto from "../assets/Image/me.png";
+import MyPhoto from "../assets/Image/Linkedin office.png";
 import styles from "./Header.module.css";
 
 function Header() {

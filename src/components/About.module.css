@@ -1,13 +1,14 @@
 /* About.module.css */
 .aboutContainer {
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   justify-content: center;
   align-items: center;
   color: #ffffff;
   font-family: 'Fira Code', monospace;
-  margin-top: -10%; 
-  margin-bottom: -2%; 
-  padding: 0; 
+  padding: 2em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .aboutDescription {
@@ -15,13 +16,22 @@
   padding: 20px;
   border-radius: 4px;
   font-size: 1.2em;
-  overflow: auto; 
+  overflow: auto;
+  width: 100%; /* Use 100% width to fill the container */
+  max-width: 800px; /* Set a max-width for large screens */
+  box-sizing: border-box;
+  margin: auto; /* Center in the flex container */
 }
 
-/* Example media query adjustment for smaller screens */
 @media (max-width: 768px) {
   .aboutContainer {
-    padding: 1em; 
-    height: auto; 
+    padding: 1em; /* Reduce padding on smaller screens */
+  }
+
+  .aboutDescription {
+    font-size: 1em; /* Reduce font size on smaller screens */
+    padding: 1em; /* Reduce padding on smaller screens */
+    margin: 0 3%; /* Add some horizontal margin for small screens */
   }
 }
+
