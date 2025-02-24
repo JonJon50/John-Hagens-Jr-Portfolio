@@ -1,51 +1,39 @@
 // component/About.js
 import React from "react";
+import Typewriter from "typewriter-effect";
+import useSound from "use-sound";
+import keyboardSound from "../assets/sounds/keyboard.mp3";
 import { Col, Row } from "react-bootstrap";
-import styles from "./About.module.css"; // Import the module here
+import styles from "./About.module.css";
 
 function About() {
+  const [play] = useSound(keyboardSound);
+
   return (
-    <Row
-      className={`${styles.aboutContainer} d-flex justify-content-center align-items-center min-vh-100`}
-    >
-      <Col xs={12} lg={4} className={styles.aboutDescription}>
-        <pre>
-          <code>
-            <span className={styles.comment}> About me </span>
-            {"\n\n"}
-            <span className={styles.info}> firstName: ‘John’, </span>
-            {"\n"}
-            <span className={styles.info}> lastName: ‘Hagens’, </span>
-            {"\n\n"}
-            <span className={styles.info}>
-              {" "}
-              title: 'Full Stack Web Developer',
-            </span>
-            {"\n\n"}
-            <span className={styles.info}>
-              {" "}
-              technologies: [JavaScript, React, Node.js,
-              {"\n"} Express, MySQL, Postgres, Python
-            </span>
-            {"\n"}
-            <span className={styles.info}> CSS, Bootstrap, Git, GitHub, MongoDB
-            {"\n"} Tailwinds]</span>
-            {"\n\n"}
-            <span className={styles.info}> openToRelocate: 'true'</span>
-            {"\n"}
-            <span className={styles.info}> remotePosition: 'true'</span>
-            {"\n"}
-            <span className={styles.info}> yearsOfExperience: 3</span>
-            {"\n\n"}
-            <span className={styles.info}> hobbies: &#91;Coding, Traveling,
-              {"\n"}
-              'Family, Cycling, Reading],
-            </span>
-            {"\n\n"}
-            <span className={styles.info}> origins: 'African American'</span>
-            {"\n"}
-          </code>
-        </pre>
+    <Row className={`${styles.aboutContainer} d-flex justify-content-center align-items-center`}>
+      <Col xs={12} lg={8} className={styles.terminalContainer} onMouseEnter={play}>
+        <div className={styles.terminalHeader}>
+          <span className={styles.terminalTitle}>john@portfolio:~$ git status</span>
+        </div>
+        <div className={styles.terminalBody}>
+          <Typewriter
+            options={{
+              strings: [
+                "John Hagens Portfolio",
+                "Full Stack Web Developer / Associate Software Engineer",
+                "Technologies: [ JavaScript (ES6+), TypeScript, React.js, Next.js, Node.js, Express.js, MySQL, PostgreSQL, MongoDB, Python, Git, GraphQL, RESTful APIs, Tailwind CSS, Docker, AWS, CI/CD ]",
+                "Specialties: [ API Development, Cloud Computing, Database Management, System Architecture, AI Infrastructure, Automation ]",
+                "Certifications: [ Full Stack Web Development (UCF), Associate Data Analyst (DataCamp), Security+ (In Progress) ]",
+                "Remote Work: Yes",
+                "Open to Relocate: Yes",
+                "Hobbies: [ Coding, AI Research, Data Science, Traveling, Family, Cycling, Reading ]"
+              ],
+              autoStart: true,
+              loop: true,
+              delay: 50,
+            }}
+          />
+        </div>
       </Col>
     </Row>
   );

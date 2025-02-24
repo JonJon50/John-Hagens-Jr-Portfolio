@@ -1,37 +1,53 @@
 /* About.module.css */
+/* Overall Container */
 .aboutContainer {
   display: flex;
-  flex-direction: column; /* Stack content vertically */
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  font-family: 'Fira Code', monospace;
-  padding: 2em;
-  width: 100%;
-  box-sizing: border-box;
+  height: 100vh;
+  background-color: #000000;
+  /* Darker background */
 }
 
-.aboutDescription {
-  background-color: #1e2127;
+/* Terminal Box */
+.terminalContainer {
+  background-color: #1e1e1e;
+  color: #fcfffc;
+  font-family: "Courier New", monospace;
   padding: 20px;
-  border-radius: 4px;
-  font-size: 1.2em;
-  overflow: auto;
-  width: 100%; /* Use 100% width to fill the container */
-  max-width: 800px; /* Set a max-width for large screens */
-  box-sizing: border-box;
-  margin: auto; /* Center in the flex container */
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+  border: 3px solid #61dafb;
 }
 
+/* Terminal Header */
+.terminalHeader {
+  background-color: #030303;
+  padding: 10px;
+  font-size: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 2px solid #61dafb;
+}
+
+/* Terminal Title */
+.terminalTitle {
+  color: #33ff33;
+  font-weight: bold;
+}
+
+/* Terminal Body */
+.terminalBody {
+  padding: 15px;
+  font-size: 1.1rem;
+  white-space: pre-line;
+}
+
+/* Media Query for Mobile */
 @media (max-width: 768px) {
-  .aboutContainer {
-    padding: 1em; /* Reduce padding on smaller screens */
-  }
-
-  .aboutDescription {
-    font-size: 1em; /* Reduce font size on smaller screens */
-    padding: 1em; /* Reduce padding on smaller screens */
-    margin: 0 3%; /* Add some horizontal margin for small screens */
+  .terminalContainer {
+    width: 90%;
+    font-size: 0.9rem;
   }
 }
-
