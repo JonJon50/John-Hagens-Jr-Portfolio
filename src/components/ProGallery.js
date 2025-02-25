@@ -5,7 +5,7 @@ import image1 from '../assets/Image/FitResolution.png';
 import image2 from '../assets/Image/Home:page.png';
 import image3 from '../assets/Image/IciHomes.png';
 import image4 from '../assets/Image/Map.png';
-import image5 from '../assets/Image/Nannys care2.png';
+import image5 from '../assets/Image/WorkingOutWonders.png';
 import image6 from '../assets/Image/Tattoo.png';
 
 const galleryImages = [
