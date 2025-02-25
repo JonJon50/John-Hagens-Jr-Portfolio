@@ -1,9 +1,9 @@
 /* index.css */
 body {
   margin: 0;
-  font-family: 'monospaced', 'Roboto Mono', monospace; /* Monospaced font for coding feel */
-  background-color: #f9f7f7; /* Darker background for code editor look */
-  color: #abb2bf; /* Lighter text color for readability */
+  font-family: 'monospaced', 'Roboto Mono', monospace; 
+  background-color: #f9f7f7; 
+  color: #abb2bf; 
 }
 code {
   font-family: 'monospaced', 'Roboto Mono', monospace;

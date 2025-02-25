@@ -1,5 +1,4 @@
 /* Footer.module.css */
-
 .footerSticky {
   margin-top: 0;
   color: #000;
@@ -61,7 +60,6 @@
 .contactInfo a:hover::before,
 .contactInfo a:hover::after {
   width: 10px;
-  /* Width of the brackets on hover */
   transform: translateY(-50%);
 }
 
@@ -78,7 +76,7 @@
   margin: 0;
 }
 
-/* Responsive design for smaller screens */
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;

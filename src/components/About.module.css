@@ -1,15 +1,13 @@
 /* About.module.css */
-/* Overall Container */
 .aboutContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #000000;
-  /* Darker background */
+
 }
 
-/* Terminal Box */
 .terminalContainer {
   background-color: #1e1e1e;
   color: #fcfffc;
@@ -21,7 +19,6 @@
   border: 3px solid #61dafb;
 }
 
-/* Terminal Header */
 .terminalHeader {
   background-color: #030303;
   padding: 10px;
@@ -31,20 +28,19 @@
   border-bottom: 2px solid #61dafb;
 }
 
-/* Terminal Title */
+
 .terminalTitle {
   color: #33ff33;
   font-weight: bold;
 }
 
-/* Terminal Body */
 .terminalBody {
   padding: 15px;
   font-size: 1.1rem;
   white-space: pre-line;
 }
 
-/* Media Query for Mobile */
+
 @media (max-width: 768px) {
   .terminalContainer {
     width: 90%;

@@ -34,11 +34,23 @@
     "title": "...work",
     "projects": [
       {
+        "subtitle": "Working Out Wonders Foundation Inc.",
+        "description": "Non-Profit Website built with Next.js, React, JavaScript, Node.js, TypeScript, Express.js, Tableau, and Vercel.",
+       "url": "https://carroll-farmhouse-cemetery-preservation.vercel.app/ccaah/cemetery",
+        "repo": "https://github.com/JonJon50/carroll-farmhouse-cemetery-preservation"
+      },
+      {
         "subtitle": "Son of Ink",
-        "description": "Tattoo Shop Website built with React, JavaScript, MongoDB, Node.js, Express.js Apollo Sandbox .",
+        "description": "Tattoo Shop Website built with Next.js, React, JavaScript, MongoDB, Node.js, Express.js Apollo Sandbox .",
         "url": "https://son-of-ink.vercel.app/",
         "repo": "https://github.com/JonJon50/Son-of-Ink"
       },
+  {
+        "subtitle": "Reels Entertainment DJ Service ",
+        "description": "Next.js, TypeScript. Using React/Hook - useState, useEffect, JavaScript, Next.js, framer-motion, Tailwind and Vercel.",
+        "url": "https://reels-entertainment.vercel.app/",
+        "repo": "https://github.com/JonJon50/Reels-Entertainment"
+      }, 
       {
         "subtitle": "CentralFL-Homes",
         "description": "Real Estate Home Builders PHP, Lavavel, Alpine.js, Livewire, Vite, API, MVC.",

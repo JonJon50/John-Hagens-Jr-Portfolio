@@ -20,10 +20,9 @@ function Project({ project }) {
           <span className={styles.bracket}>]</span>
         </h3>
       </div>
-      {/* Show project details when showDetails is true */}
+    
       {showDetails && (
-        <div className={styles.projectDetails}>
-          {/* Conditionally render subproject details if they exist */}
+        <div className={styles.projectDetails}>   
           {project.projects && project.projects.map((subproject, index) => (
             <div key={index}>
               <div className={styles.subtitleButtonContainer}>

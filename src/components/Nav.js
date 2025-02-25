@@ -6,7 +6,6 @@ import styles from "./Nav.module.css";
 function Nav() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  // You might want to add a style for the backdrop in your CSS module.
   const backdrop = isNavExpanded ? (
     <div
       className={styles.backdrop}
@@ -18,7 +17,7 @@ function Nav() {
     <div className={styles.navContainer}>
       {backdrop}
       <button
-        className={styles.hamburger} // Apply the hamburger style from your module
+        className={styles.hamburger} 
         onClick={() => setIsNavExpanded(!isNavExpanded)}
       >
         <span className={styles.line}></span>
